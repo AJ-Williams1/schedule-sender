@@ -1,0 +1,762 @@
+ 1/1: words
+ 1/2: AYA
+ 1/3: YA BOIZ
+ 2/1: round(1.45)
+ 2/2: round(1.5)
+ 2/3: round(1.47)
+ 2/4:
+round(1.499
+()
+)
+ 3/1: round(1.45)
+ 5/1:
+g(t):
+    return S * 1.03**t
+ 5/2:
+def g(t):
+    return S * 1.03**t
+ 5/3: g(3)
+ 5/4: from math import e
+ 5/5: e
+ 5/6: S = 67550 * e**(0.02 * 5.5)
+ 5/7: S
+ 5/8: round(s, 2)
+ 5/9: round(S, 2)
+5/10:
+for t from 1 to 10:
+    g(t)
+5/11:
+for t in range(1,10):
+    g(t)
+5/12:
+for t in range(1,10):
+    print(round(g(t), 2))
+5/13:
+for t in range(1,10):
+    print("{round(g(t), 2)}")
+5/14:
+for t in range(1,10):
+    print(f"{t+1} : {round(g(t), 2)}")
+5/15:
+for t in range(1,11):
+    print(f"{t+1} : {round(g(t), 2)}")
+5/16:
+for t in range(1,11):
+    print(f"{t+1} : {round(0.7 * g(t), 2)}")
+5/17: 0.7 * 75404.58
+5/18: yrs = []
+5/19: yrs.add(3)
+5/20: yrs.append(3)
+5/21: yrs
+5/22: yrs.pop()
+5/23: pyrs
+5/24: yrs
+5/25: yrs.append(0.7 * 75404.58)
+5/26:
+for t in range(1,11):
+    print(f"{t+1} : {round(0.7 * g(t), 2)}")
+    yrs.append(round(0.7 * g(t), 2))
+5/27: yrs
+5/28:
+for num in yrs, i from 1 to 11:
+    print(f"{i} : {num - 3532.32}")
+5/29:
+for num in yrs, i in range(1, 12):
+    print(f"{i} : {num - 3532.32}")
+5/30:
+for num in yrs:
+    print(f"{i} : {num - 3532.32}")
+5/31:
+for num in yrs:
+    print(f"{num - 3532.32}")
+5/32:
+for num in yrs:
+    print(round(num - 3532.32, 2))
+ 6/1: print("a" * 4)
+ 6/2: height = 3
+ 6/3:
+for i in range(1, height):
+    print("hello")
+ 6/4:
+for i in range(height, 1):
+    print("hello")
+ 6/5:
+for i in range(height, 1, -1):
+    print("hello")
+ 6/6: int(input("words"))
+ 6/7: int(input("words"))
+ 6/8: input("words")
+ 7/1:
+def R(r, t):
+    top = P * r / 12
+    bottom = 1 - (12/(12 + r))**12t
+ 7/2:
+def R(r, t):
+    top = P * r / 12
+    bottom = 1 - (12/(12 + r))^(12*t)
+    return top / bottom
+ 7/3: def solve(r, t, down)
+ 7/4:
+def solve(r, t, down):
+    P = (down / 100) * 249500
+    R(r, t,)
+ 7/5:
+def R(r, t):
+    r = r/100
+    top = P * r / 12
+    bottom = 1 - (12/(12 + r))^(12*t)
+    return top / bottom
+ 9/1:
+if [1, 2, 3] in [1, 2, 3, 4]:
+    print("ye")
+ 9/2:
+if 1 in [1, 2, 3, 4]:
+    print("ye")
+ 9/3: import collections
+ 9/4: collections.Counter([1, 2, 3]) == collections.Counter([3, 2, 1])
+ 9/5: collections.Counter([1, 2, 3]) == collections.Counter([3, 3, 1])
+ 9/6: collections.Counter([1, 2, 3]) == collections.Counter([3, 2, 1])
+11/1: nums = [3, 4, 5, 4]
+11/2: max(nums)
+11/3: nums = [3, 4, 5, 4]
+11/4: nums = [3, 4, 5, 4, 5, 5]
+11/5: nums.index(max(nums))
+12/1: keys = []
+12/2:
+if keys:
+    print("hello")
+12/3: keys = [0]
+12/4:
+if keys:
+    print("hello")
+13/1: string = "hello"
+13/2: string[0]
+14/1: string = "/\"
+14/2: string = "/\\"
+14/3: print(string)
+15/1: import pandas as pd
+15/2: import matplotlib.pyplot as plt
+15/3: data = pd.read_csv "Downloads\2"
+15/4: pd.read_csv("Downloads\data.csv")
+15/5: pd.read_csv("Downloads/data.csv")
+15/6: pwd
+15/7: pd.read_csv("C:\\Users\\ajame\\Downloadsdata.csv")
+15/8: pd.read_csv("C:\\Users\\ajame\\Downloadsdata.csv")
+15/9: pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/10: pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/11: pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/12: pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/13: pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/14: data = pd.read_csv("C:\\Users\\ajame\\Downloads\\data.csv")
+15/15: plt.scatter(data['time (ms)'], data['velocity (RPM)'])
+15/16: plt.scatter(data['time (ms)'], data['velocity (RPM)'])
+15/17: plt.scatter(data['time (ms)'], data['velocity'])
+15/18: plt.scatter(data['time (ms)'], data['velocity (RPM)'])
+15/19: data.list_keys()
+15/20: data.list_keys()
+15/21: data.keys()
+15/22: plt.scatter(data['time (ms)'], data[' velocity (RPM)'])
+15/23: plt.show()
+15/24: plt.scatter(data['time (ms)'], data[' velocity (RPM)'], data[' current (mA)'])
+15/25: plt.scatter(data['time (ms)'], data[' velocity (RPM)'], data[' current (mA)'])
+15/26: data.keys()
+15/27: plt.scatter(data['time (ms)'], data[' velocity (RPM)'], data[' current(mA)'])
+15/28: plt.show
+15/29: plt.show()
+15/30: plt.scatter(data['time (ms)'], data[' velocity (RPM)'])
+15/31: plt.show()
+   1:
+import datetime
+import json
+from bs4 import BeautifulSoup
+
+with open("cal.html", "r+") as f:
+    soup = BeautifulSoup(f, 'html.parser')
+
+tables = soup.find_all("table")
+
+# with open("tables.txt", "r") as f:
+#     f.seek(0)
+#     tables = json.load(f)
+
+print(type(tables))
+
+halfday = tables[0]
+
+# print(halfday.td)
+   2: print(tables)
+   3: tables.td
+   4: tables.find_all("td")
+   5: soup.find_all("table").td
+   6: soup.table.td
+   7: soup.find_all("table", class="c17")
+   8: soup.find_all("table", class_="c17")
+   9: soup.find("table", class_="c17")
+  10: soup.find("table", class_="c17").find_all("td")
+  11: soup.find("table", class_="c17").find_all("tr")
+  12:
+for row in soup.find("table", class_="c17").find_all("tr"):
+    print(row)
+    print("\n\n")
+  13: halfweek = soup.find("table", class_="c17")
+  14: halfweek.find_all("td")
+  15: rows = halfweek.find_all("td")
+  16:
+for row in rows:
+    print(row.find("td"))
+  17:
+for row in rows:
+    print(row.find_all("td"))
+  18:
+for row in rows:
+    print(row)
+  19:
+for row in rows:
+    print(row.td)
+  20: halfweeks = soup.find_all("table", class_="c17")
+  21: halfweek = halfweeks[0]
+  22: halfweek
+  23: halfweek.find_all("tr")
+  24: halfweek.find_all("tr")
+  25: rows = halfweek.find_all("tr")
+  26: rows = halfweek.find_all("td", string="August 31, 2022")
+  27: rows = halfweek.find_all("td", string="August 31, 2022")
+  28: halfweek.find_all("td", string="August 31, 2022")
+  29: halfweek.find_all("td", string="August 31, 2022")
+  30: import re
+  31: halfweek.find_all("td", string=re.compile(".*August 31, 2022.*"))
+  32: halfweek.find_all("td", string=re.compile(".*August 31\, 2022.*"))
+  33: halfweek.find_all("td")
+  34: halfweek.find_all("td", string=re.compile(".*"))
+  35: halfweek.find_all("td", string=re.compile(".*"))
+  36: halfweek.find_all("td")
+  37:
+for data in halfweek.find_all("td"):
+    data.find_all("p")[1]
+  38:
+for data in halfweek.find_all("td"):
+    data.find_all("p")
+  39:
+for data in halfweek.find_all("td"):
+    data.find_all("p")
+  40: halfweek.find_all("td")
+  41: halfweek.find("tr")
+  42: halfweek.find("tr").find_all("span", string="August 31, 2022")
+  43: halfweek.find("tr").find_all("span", string="August 31, 2022")
+  44: halfweek.find("tr").find_all("span")
+  45: halfweek.find("tr").find_all("span", string="August 31, 2022")
+  46: halfweek.find("tr").find_all("span")
+  47: halfweek.find("tr").find_all("span", string="August 31, 2022")
+  48: halfweek.find("tr").find_all("span", string=re.compile(".*August 31, 2022.*"))
+  49: halfweek.find("tr").find_all("span", string=re.compile(".*August 31, 2022.*")).get_parent()
+  50: halfweek.find("tr").find_all("span", string=re.compile(".*August 31, 2022.*")).find_parent()
+  51: halfweek.find("tr").find("span", string=re.compile(".*August 31, 2022.*")).find_parent()
+  52: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent()
+  53: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent("td")
+  54: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_next_sibling()
+  55: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_next_siblings()
+  56: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_next_siblings()
+  57: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent().find_parent()
+  58: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent().find_parent().find("span" string=re.compile(".*Day.*"))
+  59: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  60:
+from bs4 import BeautifulSoup
+import re
+
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  61:
+from bs4 import BeautifulSoup
+import re
+
+def get_day(datestring):
+   
+
+    regexstring = f".*{datestring}.*"
+
+    soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  62: get_day("August 29, 2022")
+  63: get_day("August 29, 2022")
+  64: get_day("August 29, 2022")
+  65:
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+
+print(get_day("August 29, 2022"))
+  66:
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+
+print(get_day("August 29, 2022"))
+  67:
+def get_day(datestring):
+    regexstring = f".*{datestring}.*"
+    print(regexstring)
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+print(get_day("August 29, 2022"))
+  68:
+def get_day(datestring):
+    regexstring = f".*{datestring}.*"
+    print(regexstring)
+    soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+get_day("August 29, 2022")
+  69:
+def get_day(datestring):
+    regexstring = f".*{datestring}.*"
+    print(regexstring)
+    soup.find("span", string=re.compile(".*August 29, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+get_day("August 29, 2022")
+  70:
+def get_day(datestring):
+    regexstring = f".*{datestring}.*"
+    return soup.find("span", string=re.compile(".*August 29, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+get_day("August 29, 2022")
+  71: soup.find("span", string=re.compile(".*August 29, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  72: soup.find("span", string=re.compile(".*August 31, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  73: soup.find("span", string=re.compile(".*August 30, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  74: soup.find("span", string=re.compile(".*September 2, 2022.*")).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  75:
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*"))
+  76: get_day("October 6, 2022")
+  77:
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*")).get_text()
+  78: get_day("October 6, 2022")
+  79:
+def get_day(datestring):
+    with open("cal.html", "r+") as f:
+        soup = BeautifulSoup(f, 'html.parser')
+
+    regexstring = f".*{datestring}.*"
+
+    return soup.find("span", string=re.compile(regexstring)).find_parent().find_parent().find("span", string=re.compile(".*Day.*")).get_text().strip()
+  80: get_day("October 6, 2022")
+  81: re.match("Day 8", "Day\ \zs[1-8]")
+  82: re.search("Day 8", "Day\ \zs[1-8]")
+  83: re.math("Day 8", "Day\ \zs[1-8]")
+  84: re.match("Day 8", "Day\ \zs[1-8]")
+  85: re.match("Day 8", "[1-8]")
+  86: re.match("Day 8", "\[1-8\]")
+  87: re.match("\d", "Day 8")
+  88: re.search("\d", "Day 8")
+  89: re.search("\d", "Day 8").text()
+  90: re.search("\d", "Day 8").match()
+  91: re.search("\d", "Day 8").attrs
+  92: re.search("\d", "Day 8")
+  93: re.search("\d", "Day 8").string
+  94: re.search("\d", "Day 8").group()
+  95: int(re.search("\d", "Day 8").group())
+  96: soup.find_all("table")
+  97: soup.find_all("table")[0]
+  98: soup.find_all("table").pop(0)
+  99: soup.find_all("table").remove(0)
+ 100: tables = soup.find_all("table")
+ 101: tables.pop(0)
+ 102: tables
+ 103: tables[0]
+ 104: rows = []
+ 105:
+for table in tables:
+    rows.append(table.find("tr"))
+ 106: rows
+ 107: days = []
+ 108:
+for row in rows:
+    row.find_all("td", string=re.compile(".*"))
+ 109: weekdaynames = [re.compile(".*Monday.*"), re.compile(".*Tuesday.*"), re.compile(".*Wednesday.*"), re.compile(".*Thursday.*"), re.compile(".*Friday.*")]
+ 110:
+for row in rows:
+    row.find_all("td", string=weekdaynames)
+ 111:
+for row in rows:
+    row.find_all("td", string=re.compile(".*Monday.*"))
+ 112: rows
+ 113:
+for row in rows:
+    row.find_all("td")
+ 114: rows.find_all("td")
+ 115:
+for row in rows:
+    row.find_all("td")
+ 116: rows[1]
+ 117: rows[1].find_all("td")
+ 118: rows[0].find_all("td")
+ 119: for row in rows:find_all("td")
+ 120:
+for row in rows:
+    row.find_all("td")
+ 121:
+for row in rows:
+    print(row.find_all("td"))
+ 122:
+for row in rows:
+    row.find_all("span", string=weekdaynames)
+ 123:
+for row in rows:
+    print(row.find_all("span", string=weekdaynames))
+ 124:
+for row in rows:
+    print(row.find_all("span", string=weekdaynames).get_parent())
+ 125:
+for row in rows:
+    print(row.find_all("span", string=weekdaynames).get_parent())
+ 126:
+for row in rows:
+    print(row.find_all("span", string=weekdaynames).get_parent())
+ 127:
+for row in rows:
+    days_children = row.find_all("span", string=weekdaynames)
+ 128: days_children
+ 129:
+for row in rows:
+    days_children.append = row.find_all("span", string=weekdaynames)
+ 130: days_children
+ 131: days_children = []
+ 132:
+for row in rows:
+    days_children.append(row.find_all("span", string=weekdaynames))
+ 133: days_children
+ 134: days_children.get_parent()
+ 135:
+for day_child in days_children:
+    day_child.get_parent()
+ 136:
+for day_child in days_children:
+    print(day_child)
+ 137:
+for row in rows:
+    days_children.append(row.find_all("span", string=weekdaynames).items())
+ 138: [2, 4, 6].items()
+ 139: *[2, 4, 6]
+ 140:
+for row in rows:
+    days_children.append(*row.find_all("span", string=weekdaynames))
+ 141:
+for row in rows:
+    days_children.extend(row.find_all("span", string=weekdaynames))
+ 142: days_children = []
+ 143:
+for row in rows:
+    days_children.extend(row.find_all("span", string=weekdaynames))
+ 144:
+for day_child in days_children:
+    print(day_child)
+ 145:
+for day_child in days_children:
+    days.append(day_child)
+ 146: days
+ 147:
+for day_child in days_children:
+    print(day_child.get_parent())
+ 148:
+for day_child in days_children:
+    print(day_child.get_parent())
+ 149:
+for day_child in days_children:
+    print(day_child)
+ 150: day_children[0]
+ 151: days_children[0]
+ 152: days_children[0].get_parent()
+ 153: type(days_children[0])
+ 154: days_children[0].get_parent()
+ 155: type(days_children[0])
+ 156: days_children[0].get_parent()
+ 157: days_children[0].find_parent()
+ 158: days_children[0].find_grandparent()
+ 159: days_children[0].find_parent().find_parent()
+ 160:
+for day_child in days_children:
+    print(dayy_child.find_parent().find_parent())
+ 161:
+for day_child in days_children:
+    print(day_child.find_parent().find_parent())
+ 162:
+for day_child in days_children:
+    days.append(day_child.find_parent().find_parent())
+ 163: days = []
+ 164:
+for day_child in days_children:
+    days.append(day_child.find_parent().find_parent())
+ 165: days
+ 166: %history -g -f history.py
+ 167: days
+ 168:
+for day in days:
+    day.find_all("span")
+ 169:
+for day in days:
+    print(day.find_all("span"))
+ 170:
+for day in days:
+    print(day.find("span"), string=re.compile("\w+\ \d{1,2},\ \d{4}"))
+ 171:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))
+ 172:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 173:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 174:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))).get_text().strip()
+ 175:
+for day in days:
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))get_text().strip()
+ 176:
+for day in days:
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 177:
+for day in days:
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))
+ 178:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 179:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text())
+ 180:
+for day in days:
+    print(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text())
+ 181:
+for day in days:
+    type(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 182:
+for day in days:
+    type(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 183:
+for day in days:
+    type(day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 184: type(days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")))
+ 185: days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text()
+ 186: days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 187:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 188:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 189:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 190:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 191:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 192:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 193:     days[0].find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 194:
+for day in days:
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 195:
+for day in days:
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 196:
+for day in days:
+    print(day)
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 197:
+for day in days:
+    print(day)
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 198:
+for day in days:
+    print(day)
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 199:
+for day in days:
+    print(day)
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 200:
+for day in days:
+    print(day)
+ 201:
+for day in days:
+    days.find_all("span")
+ 202:
+for day in days:
+    day.find_all("span")
+ 203:
+for day in days:
+    print(day.find_all("span"))
+ 204:
+for day in days:
+    print(day)
+    day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 205:
+for day in days:
+    day.find_all("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 206:
+for day in days:
+    day.find_all("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))[0].get_text().strip()
+ 207:
+for day in days:
+    day.find_all("span", string=re.compile("\w+\ \d{1,2},\ \d{4}")).get_text().strip()
+ 208:
+for day in days:
+    if(goodday = day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.get_text().strip())
+ 209:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.get_text().strip())
+ 210:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        daysdict[goodday.get_text().strip()] = goodday.find_parent().find_parent().find("span", string=re.compile("\*Day\ \d.*"))
+ 211: daysdict={}
+ 212:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        daysdict[goodday.get_text().strip()] = goodday.find_parent().find_parent().find("span", string=re.compile("\*Day\ \d.*"))
+ 213: daysdict
+ 214:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find("span", string=re.compile("\*Day\ \d.*")))
+ 215:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent())
+ 216:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span"))
+ 217:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day \d.*")))
+ 218:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day \d.*")).get_text())
+ 219:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day \d.*")).get_text())
+ 220:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day \d.*")).get_text())
+ 221:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day \d.*")).get_text())
+ 222:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")))
+ 223:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 224:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")) != []):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 225:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 226:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")))
+ 227:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")).get_text())
+ 228:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find_all("span", string=re.compile(".*Day\ \d.*")).get_text())
+ 229:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text())
+ 230:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            print(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 231:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 232:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()))
+ 233:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip())
+ 234:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 235: daysdics = {}
+ 236:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 237: daysdict = {}
+ 238:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 239: daysdict
+ 240:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict [goodday.get_text().strip()] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 241: daysdict
+ 242:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict[goodday.get_text().strip()] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 243: %history -g -f history.py
+ 244: daysdict
+ 245: daysdict = {}
+ 246:
+for day in days:
+    if(goodday := day.find("span", string=re.compile("\w+\ \d{1,2},\ \d{4}"))):
+        if(goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*"))):
+            daysdict[goodday.get_text().strip()] = goodday.find_parent().find_parent().find("span", string=re.compile(".*Day\ \d.*")).get_text().strip()
+ 247: daysdicts
+ 248: daysdict
+ 249: %history -g -f history.txt
